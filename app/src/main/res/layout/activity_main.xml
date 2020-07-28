@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Randomizer"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:fontFamily="cursive"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="50dp" />
+
+    <View
+        android:id="@+id/underline"
+        android:layout_width="200dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/heading"
+        android:background="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/rand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading"
+        android:text="0"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textSize="100sp"
+        android:fontFamily="sans-serif-condensed-medium"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="390dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/rand"
+        android:background="@android:color/darker_gray"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"/>
+
+    <TextView
+        android:id="@+id/howMany"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider"
+        android:text="How many?"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"/>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/howMany"
+        android:layout_margin="30dp"/>
+
+    <TextView
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekBar"
+        android:text=""
+        android:gravity="center"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="35sp"
+        android:textColor="@android:color/holo_green_light"/>
+
+    <Button
+        android:id="@+id/rollit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progress"
+        android:text="Roll"
+        android:background="@android:color/holo_red_dark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif"/>
+
+
+</RelativeLayout>
